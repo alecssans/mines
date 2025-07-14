@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 2rem;
+}
+
+.game {
+  max-width: 600px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background: #222;
+  border: 1px solid #444;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+}
+
+.cell.revealed.safe {
+  background-image: url('../assets/gem.png');
+}
+
+.cell.revealed.mine {
+  background-image: url('../assets/mine.png');
+}
+
+.controls {
+  margin: 1rem 0;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  cursor: pointer;
+}
